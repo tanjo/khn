@@ -1,0 +1,24 @@
+html
+  head 
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title KHN Options
+  body 
+    #container(style='margin: 0 auto; width: 80%;')
+      h1 KHN Options
+      h2 遷移したいサイトを選択してください
+      .form-check
+        input#yahoo.form-check-input(type='radio', name='site', value='1')
+        label.form-check-label(for='yahoo') Yahoo!
+      .form-check
+        input#google.form-check-input(type='radio', name='site', value='2')
+        label.form-check-label(for='google') Google
+      .form-check
+        input#bing.form-check-input(type='radio', name='site', value='3')
+        label.form-check-label(for='bing') Bing
+      .form-check 
+        input#other.form-check-input(type='radio', name='site', value='4')
+        label.form-check-label(for='other') その他
+        input#url.form-control(style="margin-left: 0.5vw;", type='text', placeholder='URLを入力してください')
+
+      button#save.btn.btn-primary(style="margin-top: 1vw;" disabled) 保存
