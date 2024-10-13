@@ -19,7 +19,5 @@ export class Khn {
   }
 }
 
-window.onload = () => {
-  const khn = new Khn();
-  khn.load();
-}
+const khn = new Khn();
+khn.load();
