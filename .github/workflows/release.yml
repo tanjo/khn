@@ -11,11 +11,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: ci and build
-        working-directory: src
-        run: |
-          npm ci
-          npm run build
+      # - name: ci and build
+      #   working-directory: src
+      #   run: |
+      #     npm ci
+      #     npm run build
       - name: Zip
         run: |
           zip -r build.zip app
