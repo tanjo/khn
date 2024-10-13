@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||nhk.or.jp/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||nhk.jp/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||nhk-ondemand.jp/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||nhkworldpremium.com/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||nhk-cs.jp/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    }
+]

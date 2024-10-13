@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "khn",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "",
     "icons": {
         "16": "icons/16.png",
@@ -9,18 +9,15 @@
         "128": "icons/128.png"
     },
     "permissions": [
-        "storage"
+        "declarativeNetRequest"
     ],
-    "content_scripts": [
-        {
-            "matches": [
-                "*://nhk.or.jp/*",
-                "*://*.nhk.or.jp/*"
-            ],
-            "js": [
-                "index.js"
-            ]
-        }
-    ],
-    "options_page": "options.html"
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_nhk",
+                "enabled": true,
+                "path": "ruleset_nhk.json"
+            }
+        ]
+    }
 }
